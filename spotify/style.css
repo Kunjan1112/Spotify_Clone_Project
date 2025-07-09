@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    background-color: antiquewhite;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 69px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul li {
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.brand img {
+    width: 44px;
+    margin-right: 8px;
+}
+
+.container {
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('logo2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.icons i {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.songsContainer {
+    margin-top: 74px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 35%;
+    color: black;
+    margin: 12px 0;
+    border-radius: 34px;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+.songItem img {
+    height: 40px;
+    width: 40px;
+    border-radius: 34px;
+    margin-right: 10px;
+}
+
+.timestamp {
+     margin: 0 23px; 
+}
+
+.timestamp i {
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw  ;
+    font-family: 'Oswald', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
